@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "WGMusicMsgModel.h"
+#import "WGToolsClass.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self methodForGettingMsg];
+}
+
+-(void)methodForGettingMsg{
+    //获取到的数据格式为字典类型
+    NSArray * localSongsList = [WGToolsClass getLocalMusicListMsg];
+    NSLog(@"iPhone中“音乐”中的歌曲列表\n%@",localSongsList);
+    
+    //下面两个方法获取到的信息用Model存储，可根据WGMusicMsgModel中的相关属性获取到
+    NSArray * documentSongsList = [WGToolsClass getDucumentMusicListMsg];
+    NSLog(@"--------获取到的存在于沙盒中的歌曲相关信息--------\n%@",documentSongsList);
+    NSArray * applicationSongsList = [WGToolsClass getApplicationMusicListMsg];
+    NSLog(@"获取APP自带音乐相关信息\n%@",applicationSongsList);
 }
 
 

@@ -15,6 +15,11 @@
 		843B8248206224FA00A634A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8247206224FA00A634A7 /* main.m */; };
 		843B8252206224FA00A634A7 /* DemoForGetDocumentMusicMsgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B8251206224FA00A634A7 /* DemoForGetDocumentMusicMsgTests.m */; };
 		843B825D206224FA00A634A7 /* DemoForGetDocumentMusicMsgUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B825C206224FA00A634A7 /* DemoForGetDocumentMusicMsgUITests.m */; };
+		843B82842062440B00A634A7 /* Fort Minor - Remember the Name.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 843B827B2062440B00A634A7 /* Fort Minor - Remember the Name.mp3 */; };
+		843B82852062440B00A634A7 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B827E2062440B00A634A7 /* BaseModel.m */; };
+		843B82862062440B00A634A7 /* WGMusicMsgModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B82802062440B00A634A7 /* WGMusicMsgModel.m */; };
+		843B82872062440B00A634A7 /* WGToolsClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B82822062440B00A634A7 /* WGToolsClass.m */; };
+		843B82882062440B00A634A7 /* Styles of Beyond - Nine Thou (Superstars Remix) - remix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 843B82832062440B00A634A7 /* Styles of Beyond - Nine Thou (Superstars Remix) - remix.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,14 @@
 		843B8258206224FA00A634A7 /* DemoForGetDocumentMusicMsgUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoForGetDocumentMusicMsgUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B825C206224FA00A634A7 /* DemoForGetDocumentMusicMsgUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoForGetDocumentMusicMsgUITests.m; sourceTree = "<group>"; };
 		843B825E206224FA00A634A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843B827B2062440B00A634A7 /* Fort Minor - Remember the Name.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fort Minor - Remember the Name.mp3"; sourceTree = "<group>"; };
+		843B827D2062440B00A634A7 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		843B827E2062440B00A634A7 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		843B827F2062440B00A634A7 /* WGMusicMsgModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGMusicMsgModel.h; sourceTree = "<group>"; };
+		843B82802062440B00A634A7 /* WGMusicMsgModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGMusicMsgModel.m; sourceTree = "<group>"; };
+		843B82812062440B00A634A7 /* WGToolsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGToolsClass.h; sourceTree = "<group>"; };
+		843B82822062440B00A634A7 /* WGToolsClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGToolsClass.m; sourceTree = "<group>"; };
+		843B82832062440B00A634A7 /* Styles of Beyond - Nine Thou (Superstars Remix) - remix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Styles of Beyond - Nine Thou (Superstars Remix) - remix.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +114,7 @@
 		843B8237206224FA00A634A7 /* DemoForGetDocumentMusicMsg */ = {
 			isa = PBXGroup;
 			children = (
+				843B827A2062440B00A634A7 /* Class */,
 				843B8238206224FA00A634A7 /* AppDelegate.h */,
 				843B8239206224FA00A634A7 /* AppDelegate.m */,
 				843B823B206224FA00A634A7 /* ViewController.h */,
@@ -130,6 +144,29 @@
 				843B825E206224FA00A634A7 /* Info.plist */,
 			);
 			path = DemoForGetDocumentMusicMsgUITests;
+			sourceTree = "<group>";
+		};
+		843B827A2062440B00A634A7 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				843B827B2062440B00A634A7 /* Fort Minor - Remember the Name.mp3 */,
+				843B827C2062440B00A634A7 /* Model&Tools */,
+				843B82832062440B00A634A7 /* Styles of Beyond - Nine Thou (Superstars Remix) - remix.mp3 */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		843B827C2062440B00A634A7 /* Model&Tools */ = {
+			isa = PBXGroup;
+			children = (
+				843B827D2062440B00A634A7 /* BaseModel.h */,
+				843B827E2062440B00A634A7 /* BaseModel.m */,
+				843B827F2062440B00A634A7 /* WGMusicMsgModel.h */,
+				843B82802062440B00A634A7 /* WGMusicMsgModel.m */,
+				843B82812062440B00A634A7 /* WGToolsClass.h */,
+				843B82822062440B00A634A7 /* WGToolsClass.m */,
+			);
+			path = "Model&Tools";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				843B8245206224FA00A634A7 /* LaunchScreen.storyboard in Resources */,
+				843B82882062440B00A634A7 /* Styles of Beyond - Nine Thou (Superstars Remix) - remix.mp3 in Resources */,
 				843B8242206224FA00A634A7 /* Assets.xcassets in Resources */,
+				843B82842062440B00A634A7 /* Fort Minor - Remember the Name.mp3 in Resources */,
 				843B8240206224FA00A634A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B82862062440B00A634A7 /* WGMusicMsgModel.m in Sources */,
 				843B823D206224FA00A634A7 /* ViewController.m in Sources */,
 				843B8248206224FA00A634A7 /* main.m in Sources */,
+				843B82852062440B00A634A7 /* BaseModel.m in Sources */,
+				843B82872062440B00A634A7 /* WGToolsClass.m in Sources */,
 				843B823A206224FA00A634A7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4838U59BM2;
 				INFOPLIST_FILE = DemoForGetDocumentMusicMsg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LOVER.DemoForGetDocumentMusicMsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4838U59BM2;
 				INFOPLIST_FILE = DemoForGetDocumentMusicMsg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LOVER.DemoForGetDocumentMusicMsg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
