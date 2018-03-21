@@ -32,7 +32,7 @@
     NSArray * documentSongsList = [WGToolsClass getDucumentMusicListMsg];
     NSLog(@"--------获取到的存在于沙盒中的歌曲相关信息--------\n%@",documentSongsList);
     NSArray * applicationSongsList = [WGToolsClass getApplicationMusicListMsg];
-    NSLog(@"获取APP自带音乐相关信息\n%@",applicationSongsList);
+    NSLog(@"获取APP本身自带音乐相关信息\n%@",applicationSongsList);
 }
 
 
