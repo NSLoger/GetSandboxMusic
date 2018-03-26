@@ -43,6 +43,7 @@
         NSNumber * duration = [NSNumber numberWithDouble:[[song valueForProperty:MPMediaItemPropertyPlaybackDuration] doubleValue]];
         int second = [duration intValue];
         NSString * songDuration = [NSString stringWithFormat:@"%d:%d",second/60,second%60];
+        //获取歌曲大小属性，方法待确认
         
         if (songArtist == nil) {
             songArtist = @"未知歌手";
