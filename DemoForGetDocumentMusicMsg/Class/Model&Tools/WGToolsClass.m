@@ -34,13 +34,16 @@
 
     for (MPMediaItem * song in itemsFromGenericQuery) {
         NSString * songTitle = [song valueForKey:MPMediaItemPropertyTitle];
-        NSString * songDuration = [song valueForKey:MPMediaItemPropertyPlaybackDuration];
         NSString * songPath = [song valueForKey:MPMediaItemPropertyAssetURL];
         NSString * songArtist = [song valueForKey:MPMediaItemPropertyArtist];
         NSString * songAlbum = [song valueForKey:MPMediaItemPropertyAlbumTitle];
         //歌曲插图（如果没有插图，则返回nil）
         MPMediaItemArtwork * artwork = [song valueForProperty: MPMediaItemPropertyArtwork];
-
+        //歌曲时长
+        NSNumber * duration = [NSNumber numberWithDouble:[[song valueForProperty:MPMediaItemPropertyPlaybackDuration] doubleValue]];
+        int second = [duration intValue];
+        NSString * songDuration = [NSString stringWithFormat:@"%d:%d",second/60,second%60];
+        
         if (songArtist == nil) {
             songArtist = @"未知歌手";
         }
